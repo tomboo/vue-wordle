@@ -14,6 +14,7 @@ const rows = [
   'asdfghjkl'.split(''),
   ['Enter', ...'zxcvbnm'.split(''), 'Backspace']
 ]
+console.log(rows)
 </script>
 
 <template>

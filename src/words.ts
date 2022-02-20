@@ -1,5 +1,13 @@
 const defaultMessage = ' Using word of the day instead.'
 
+// Use getWordRandom to select a new word for each time
+// the game is played. Thus, allows for playing the game
+// multiple times per day.
+export function getWordRandom() {
+  const i = Math.floor(Math.random() * answers.length);
+  return answers[i]
+}
+
 export function getWordOfTheDay() {
   // answer included in query parameter of URI
   // For example, http://wordle.com/?SGVsbG8=

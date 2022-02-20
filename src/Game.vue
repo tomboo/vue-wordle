@@ -1,11 +1,11 @@
 <script setup lang="ts">
 import { onUnmounted } from 'vue'
-import { getWordOfTheDay, allWords } from './words'
+import { getWordRandom, allWords } from './words'
 import Keyboard from './Keyboard.vue'
 import { LetterState } from './types'
 
 // Get word of the day
-const answer = getWordOfTheDay()
+const answer = getWordRandom()
 
 // Board state. Each tile is represented as { letter, state }
 const board = $ref(
